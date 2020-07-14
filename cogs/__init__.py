@@ -99,7 +99,7 @@ class Basic(commands.Cog):
         if confirmation != None:
             cmd_messages.append(confirmation)
             if confirmation.content.lower() == 'y':
-                await announcements_channel.send("<@&{}>".format(roles[0]), embed=embed)
+                await announcements_channel.send("@everyone", embed=embed)
 
                 # gather up the members and direct message them
                 for role_id in roles:
